@@ -1,0 +1,218 @@
+*{
+    margin-top: 0;
+    border: 1px solid lightgray;
+}
+body{
+    width: 70%;
+    margin:auto;
+    /* color: #4d3b26; */
+    color: #555454;
+    
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+#wrapper{
+    background-color: rgb(245, 245, 245);
+    position: relative;
+}
+.col-1{
+    width: 33%;
+}
+.col-2{
+    width: 65%;
+}
+.col-3{
+    width: 100%;
+}
+.flexBox{
+    display: flex;
+    flex-direction: row;
+}
+
+/*//////////header section /////////*/
+header{
+    background: url("images/nik-lanus-41808-unsplash.jpg") no-repeat center top;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    
+}
+header h1{
+    font-size: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 8%;
+    
+}
+header nav, section#navbarPg2 {
+    position: absolute;
+    right: 25px;
+    margin-top: 10px;
+}
+header a, section#navbarPg2 a{
+    text-decoration: none; 
+    margin: 0 15px;
+    color: #492a05;
+}
+#bookARoom{
+    padding: 0 30px 5px;
+    border-radius: 7px;
+    background-color: #4d463f;
+    opacity: 0.7;
+    border: 3px solid #4d3b26;
+    color: #fff;
+}
+
+/*//////////visitors section /////////*/
+#visitors{
+    width: 40%;
+    height: 350px;
+    border: 1px solid #4d3b26;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    right:4%;
+}
+#visitors p{
+    margin: 0 0 35px 0;
+    border: 2px solid #fff;
+}
+#visitors>div{
+    height: 60%;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+}
+#visitors div div{
+    width: 7.5em;
+    margin: auto;
+}
+#visitors #secondColumn p{
+    text-align: right;
+    border: 2px solid #79736d;
+    border-radius: 3px;
+    font-size: 1em;
+}
+#visitors button{
+    width: 60%;
+    height: 17%;
+    margin: 0 10% 0 20%;
+    border: 3px solid #4d3b26;
+    border-radius: 5px;
+    background-color: #fff;
+    
+}
+#visitors p#two{
+    width: 1.8em;
+    text-align: center;
+    margin-left:5.5em ;
+    border: 1.5px solid #999792;
+}
+
+
+/*//////////ourServices section /////////*/
+#ourServices{
+    padding-top: 8%;
+}
+#ourServices  div div{
+    margin: 3% auto;
+    text-align: center;
+}
+#ourServices  div p{
+    margin-bottom: 70px;
+}
+#ourServices i{
+    margin-bottom: 50px ;
+}
+#ourServices  div img{
+    
+    margin-bottom: 48px;
+}
+
+
+/*//////////ourRoom section /////////*/
+#ourRooms img{
+    height: 40%;
+}
+#ourRooms div{
+    padding: 0 2%;
+}
+
+#ourRooms h2, #ourGuests h2{
+    text-align: center;
+    margin-top: -10px;
+    
+}
+
+/*//////////ourGuests section /////////*/
+section#ourGuests{
+    padding: 3% 3%;
+}
+#ourGuests div div{
+    width: 40%;
+    margin: 0 auto;
+    border: 3px solid #4d3b26; 
+    border-radius: 7px;
+    background-color: white;
+}
+#ourGuests img{
+    width: 60%;
+    height: 55%;
+    margin: 4% 20%;
+    text-align: center;
+}
+#ourGuests p{
+    width: 60%;
+    margin: 0 20%;
+    text-align: center;
+}
+#ourGuests img#jacob{
+    height: 50%;
+}
+#ourGuests h6{
+    text-align: center;
+    font-size: 15px;
+}
+
+/*//////////footer/////////*/
+footer{
+    background-color: #4d463f;
+    height: 200px; 
+    position: relative;
+}
+footer h3{
+    margin: 0 0 6px 6%;
+    padding-top: 2%;
+    color: white;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 6%;
+}
+footer form input{
+    margin: 3% 0; 
+    padding: 5px;
+    border-radius:7px; 
+    border: none;
+}
+footer form input#submit{
+    background-color: #4d463f;
+    border: 3px solid white ;
+    color: #fff;
+}
+footer i{
+    color: #fff;
+    margin: 10px;
+}
+footer nav{
+   position: absolute;
+   top: 60%;
+   right: 8%;
+   width: 20%;
+}
+/*////////////////////////////////////// Contact us  /////////////////////////////////////*/
+#navbarPg2{
+    width: 100%;
+}

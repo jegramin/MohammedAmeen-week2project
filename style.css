@@ -1,13 +1,13 @@
 *{
     margin-top: 0;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 body{
     width: 70%;
     margin:auto;
     /* color: #4d3b26; */
     color: #555454;
-    
+
     font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
 }
 #wrapper{
@@ -43,21 +43,26 @@ header h1{
     left: 8%;
     
 }
-header nav, section#navbarPg2 {
+header nav, #navbarPg2 {
     position: absolute;
     right: 25px;
     margin-top: 10px;
 }
-header a, section#navbarPg2 a{
+header a, #navbarPg2 a{
     text-decoration: none; 
     margin: 0 15px;
-    color: #492a05;
+    color: #4d463f;
 }
-#bookARoom{
+#anoy,#navbarPg2 i{
+    width: 0;
+    height: 0;
+    display: none;
+}
+#bookARoom, #navbarPg2 #bookARoom{
     padding: 0 30px 5px;
     border-radius: 7px;
     background-color: #4d463f;
-    opacity: 0.7;
+    opacity: 0.8;
     border: 3px solid #4d3b26;
     color: #fff;
 }
@@ -66,8 +71,8 @@ header a, section#navbarPg2 a{
 #visitors{
     width: 40%;
     height: 350px;
-    border: 1px solid #4d3b26;
-    border-radius: 5px;
+    border: 1px solid #4d463f;
+    border-radius: 8px;
     background-color: white;
     position: absolute;
     top: 12%;
@@ -81,7 +86,9 @@ header a, section#navbarPg2 a{
     height: 60%;
     width: 80%;
     margin: 20px auto;
-    background-color: white;
+    background-color: white; 
+    display: flex;
+    flex-direction: row;
 }
 #visitors div div{
     width: 7.5em;
@@ -97,10 +104,10 @@ header a, section#navbarPg2 a{
     width: 60%;
     height: 17%;
     margin: 0 10% 0 20%;
-    border: 3px solid #4d3b26;
+    border: 3px solid #4d463f;
     border-radius: 5px;
     background-color: #fff;
-    
+    font-size: 1.2em;
 }
 #visitors p#two{
     width: 1.8em;
@@ -113,6 +120,7 @@ header a, section#navbarPg2 a{
 /*//////////ourServices section /////////*/
 #ourServices{
     padding-top: 8%;
+    text-align: center;
 }
 #ourServices  div div{
     margin: 3% auto;
@@ -123,6 +131,7 @@ header a, section#navbarPg2 a{
 }
 #ourServices i{
     margin-bottom: 50px ;
+    
 }
 #ourServices  div img{
     
@@ -143,7 +152,15 @@ header a, section#navbarPg2 a{
     margin-top: -10px;
     
 }
-
+#ourRooms button{
+    width: 60%;
+    height: 55px;
+    margin-left: 15% ;
+    border: 3px solid #4d463f;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px;
+    font-size: 1.2em;
+}
 /*//////////ourGuests section /////////*/
 section#ourGuests{
     padding: 3% 3%;
@@ -151,7 +168,7 @@ section#ourGuests{
 #ourGuests div div{
     width: 40%;
     margin: 0 auto;
-    border: 3px solid #4d3b26; 
+    border: 3px solid #4d463f; 
     border-radius: 7px;
     background-color: white;
 }
@@ -204,15 +221,785 @@ footer form input#submit{
 }
 footer i{
     color: #fff;
-    margin: 10px;
+    margin: 0 30px;
 }
 footer nav{
+    display: flex;
+    flex-direction: row;
    position: absolute;
    top: 60%;
    right: 8%;
    width: 20%;
 }
 /*////////////////////////////////////// Contact us  /////////////////////////////////////*/
-#navbarPg2{
+#header{
+    background-color: #fff;
+    padding: 1.5% 0;
+}
+#header h1{
+    margin: 0;
+}
+section#contactUs{
+    background: url("images/francesca-saraco-65449-unsplash.jpg") no-repeat center top;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+#contactUs>h1{
+    position: absolute;
+    padding-top: 3%;
+    width: 40%;
+    height: 2em;
+    text-align: center;
+    font-size: 3em;
+    top: 10%;
+    left: 30%;
+    background-color: white;
+    opacity: 0.8;
+    
+}
+
+/*//////////location/////////*/
+#location{
+    margin-top:7% ;
+    height: 500px;
+}
+iframe{
+    margin: 0 5% 0 2%;
+}
+#location i{
+    margin-right: 5%;
+}
+#location div{
+    margin-bottom: 10%;
+}
+#location p{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/*//////////message/////////*/
+#form{
+    max-height: 600px;
+    position: relative;
+    
+}
+section#message{
+    padding-top: 2%;
+    background-color: #fff;
+    height: 600px;
+}
+section#message form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+section#message img{
+    width: 40%;
+    height: 100%;
+    z-index: 2;
+}
+div#form form,div#form h2{
+    width: 55%;
+    margin: 15px auto 20px auto;
+    text-align: center;
+}
+div#form form input, div#form form textarea{
+    margin: 12px 0;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    padding: 12px 0;
+}
+div#form form button{
+    margin: 10px 0;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    padding: 4% 0;
+    background-color: #4d463f;
+    color: #fff;
+    font-size: 1.2em;
+}
+#gradient{
+    height: 15px;
     width: 100%;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    bottom: 0;
+}
+
+/*////////////////////////////////////// our rooms  /////////////////////////////////////*/
+#features{
+    height: 10%;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 40px;
+}
+
+/*//////////theMasterSuit/////////*/
+#theMasterSuit{
+    background-color: #fff;
+    
+}
+#theMasterSuit img{
+    width: 50%;
+    height: 700px;
+}
+#theMasterSuit div{
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+#theMasterSuit div h2{
+    width: 70%;
+    margin: 0 0 35px 10%;
+    text-align: left;
+    font-size: 1.5em;
+}
+#theMasterSuit div p{
+    width: 70%;
+    margin: 35px 0 35px 10%;
+    text-align: left;
+}
+#theMasterSuit div button{
+    width: 60%;
+    height: 55px;
+    margin-left: 15% ;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.2em;
+}
+/*//////////theJonuiorSuit/////////*/
+#theJonuiorSuit{
+    position: relative;
+}
+#theJonuiorSuit img{
+    height: 550px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#theJonuiorSuit div div{
+    height: 12%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+}
+#theJonuiorSuit div{
+    background-color: #fff;
+    font-size: 1.2em;
+    position: relative;
+    width: 70%;
+    height: 498px;
+}
+#theJonuiorSuit div h2{
+    width: 50%;
+    margin: 60px 0 1% 20%;
+    text-align: left;
+    font-size: 1.5em;
+}
+#theJonuiorSuit div p{
+    width: 60%;
+    margin: 35px 0 35px 20%;
+    text-align: left;
+}
+#theJonuiorSuit div button{
+    width: 40%;
+    height: 55px;
+    margin-left: 25% ;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.2em;
+}
+
+/*//////////standardRooms/////////*/
+#standardRooms{
+    height: 710px;
+}
+#standardRooms h2{
+    width: 10em;
+    margin: 10% auto 4% auto;
+}
+#standardRooms div div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    height: 400px;
+}
+#standardRooms div div img{
+    max-width: 100%;
+    height: 55%;
+    margin-bottom: 5%;
+}
+#standardRooms button{
+    width: 30%;
+    height: 55px;
+    margin: 40px 0 1% 36%;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width : 1024px){
+    body{
+        width: 80%;
+    }
+    header a,#navbarPg2 a{
+        display: none;
+    }
+    #anoy,#navbarPg2 i{
+        display: inline;
+    }
+    #ourRooms img{
+        height: 50%;
+        width: 50%;
+    }
+    #ourRooms div{
+        width: 45%;
+    }
+    
+    #ourRooms button{
+        width: 80%;
+    }
+    /*//////////ourGuests section /////////*/
+
+#ourGuests div div{
+    width: 47%;
+    height: 50%;
+}
+
+
+/*//////////footer/////////*/
+footer h3{
+    margin: 0 0 6px 10%;
+}
+footer form{
+    width: 35%;
+}
+footer nav{
+   width: 30%;
+}
+/*////////////////////////////////////// Contact us  /////////////////////////////////////*/
+#header{
+    background-color: #fff;
+    padding: 1.5% 0;
+    
+}
+#header h1{
+    margin: 0;
+    
+}
+section#contactUs{
+    height: 300px;
+    width: 100%;
+}
+#contactUs>h1{
+    width: 70%;
+    left: 15%;  
+}
+
+/*//////////location/////////*/
+#location{
+    margin-top:7% ;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+iframe{
+    margin: 0 auto;
+    width: 90%;
+    
+}
+#location i{
+    margin-right: 5%;
+}
+#location div{
+    margin: 0 auto 1% auto;
+    width: 80%;
+}
+#location aside{
+    width: 100%;
+}
+#location div{
+    display: flex;
+    flex-direction: row;
+}
+#location p{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/*//////////message/////////*/
+#form{
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+}
+section#message{
+    padding-top: 2%;
+    background-color: #fff;
+    height: 1150px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+section#message form{
+    display: flex;
+    flex-direction: column;
+    
+}
+section#message img{
+    width: 60%;
+    margin: auto;
+    height: 550px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+div#form form,div#form h2{
+    width: 100%;
+    margin: 15px auto 20px auto;
+    text-align: center;
+}
+div#form form input, div#form form textarea{
+    margin: 12px 0;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    padding: 12px 0;
+}
+div#form form button{
+    margin: 10px 0;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    padding: 4% 0;
+    background-color: #4d463f;
+    color: #fff;
+    font-size: 1.2em;
+}
+#gradient{
+    display: none;
+}
+
+/*////////////////////////////////////// our rooms  /////////////////////////////////////*/
+#features{
+    height: 10%;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 40px;
+}
+
+/*//////////theMasterSuit/////////*/
+#theMasterSuit{
+    background-color: #fff;
+    
+}
+#theMasterSuit img{
+    width: 50%;
+    height: 700px;
+}
+#theMasterSuit div{
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+#theMasterSuit div h2{
+    width: 70%;
+    margin: 0 0 35px 10%;
+    text-align: left;
+    font-size: 1.5em;
+}
+#theMasterSuit div p{
+    width: 90%;
+    margin: 35px 0 35px 10%;
+    text-align: left;
+}
+#theMasterSuit div button{
+    width: 70%;
+    height: 55px;
+    margin-left: 15% ;
+    margin-bottom: 20px;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.2em;
+}
+/*//////////theJonuiorSuit/////////*/
+#theJonuiorSuit{
+    position: relative;
+}
+#theJonuiorSuit img{
+    height: 550px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#theJonuiorSuit div div{
+    height: 12%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+}
+#theJonuiorSuit div{
+    background-color: #fff;
+    font-size: 1.2em;
+    position: relative;
+    width: 70%;
+    height: 498px;
+}
+#theJonuiorSuit div h2{
+    width: 50%;
+    margin: 60px 0 1% 20%;
+    text-align: left;
+    font-size: 1.5em;
+}
+#theJonuiorSuit div p{
+    width: 80%;
+    margin: 35px 0 35px 10%;
+    text-align: left;
+}
+#theJonuiorSuit div button{
+    width: 40%;
+    height: 55px;
+    margin-left: 25% ;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.2em;
+}
+
+/*//////////standardRooms/////////*/
+#standardRooms{
+    height: 710px;
+}
+#standardRooms h2{
+    width: 10em;
+    margin: 10% auto 4% auto;
+}
+#standardRooms div div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    height: 450px;
+}
+#standardRooms div div img{
+    max-width: 100%;
+    height: 45%;
+    margin-bottom: 5%;
+}
+#standardRooms button{
+    width: 30%;
+    height: 55px;
+    margin: 40px 0 1% 36%;
+    border: 3px solid #4d463f;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.2em;
+}
+
+
+}
+
+
+@media only screen and (max-width : 480px) {
+    body{
+        width: 100%;
+    }
+    .flexBox{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        height: 400px;
+    }
+    header h1{
+        bottom: 150px;
+    }
+
+    /*//////////visitors section /////////*/
+    #visitors{
+        width: 90%;
+        top: 7%;
+    }
+    
+    /*//////////ourServices section /////////*/
+    #ourServices{
+        padding-top: 60%;
+        text-align: center;
+    }
+    #ourServices  div div{
+        display: flex;
+        flex-direction: row;
+        margin: 3% auto;
+        text-align: center;
+        width: 70%;
+    }
+    #ourServices  div div div{
+        display: flex;
+        flex-direction: column;}
+    #ourServices  div p{
+        margin: 0 auto 10px auto;
+    }
+    #ourServices i{
+        margin: 0 auto 10px auto;
+        
+    }
+    #ourServices  div img{
+        width: 15px;
+        margin: 0 auto 10px auto;
+    }
+
+    /*//////////ourRoom section /////////*/
+    #ourRooms img{
+        width: 100%;
+        height: 40%;
+    }
+    #ourRooms div{
+        width: 80%;
+        margin: 2% auto;
+    }
+    #ourRooms button{
+        margin-left: 17% ;
+    }
+    /*//////////ourGuests section /////////*/
+    section#ourGuests{
+        padding: 3% 3%;
+    }
+    #ourGuests div div{
+        width: 80%;
+        margin: 4% auto;
+    }
+    #ourGuests img{
+        width: 75%;
+        margin: 4% 12.5%;
+    }
+    #ourGuests p{
+        width: 60%;
+        margin: 0 20%;
+        
+    }
+    #ourGuests img#jacob{
+        height: 50%;
+    }
+    #ourGuests h6{
+        
+        font-size: 15px;
+    }
+
+    /*//////////footer/////////*/
+    footer{
+        background-color: #4d463f;
+        height: 250px; 
+        position: relative;
+    }
+    footer h3{
+        text-align: center;
+    }
+    footer form{
+        width: 85%;
+        margin :auto;
+    }
+    footer form input{
+        padding: 10px ;
+    }
+    footer i{
+        color: #fff;
+        margin: 0 50px;
+    }
+    footer nav{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    position: relative;
+    margin: auto;
+    }
+
+    /*////////////////////////////////////// Contact us  /////////////////////////////////////*/
+    #header{
+        background-color: #fff;
+        padding: 1.5% 0;
+    }
+    #header h1{
+        margin: 0;
+    }
+    section#contactUs{
+        height: 300px;
+        width: 100%;
+    }
+    #contactUs>h1{
+        padding-top: 5%;
+        width: 100%;
+        left: 0%;  
+    }
+
+    /*//////////location/////////*/
+    #location{
+        margin-top:7% ;
+        height: 500px;
+        text-align: center;
+    }
+    iframe{
+        margin: 0 auto;
+        width: 95%;
+    }
+    #location i{
+        margin-right: 5%;
+    }
+    #location div{
+        margin: 0 auto 10% auto;
+        width: 95%;
+    }
+    #location aside{
+        width: 100%;
+    }
+    #location div{
+        display: flex;
+        flex-direction: row;
+    }
+    #location p{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    /*//////////message/////////*/
+    #form{
+        height: 600px;
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+    }
+    section#message{
+        padding-top: 2%;
+        background-color: #fff;
+        height: 1150px;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section#message form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    section#message img{
+        width: 80%;
+        margin: auto;
+        height: 550px;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+    div#form form,div#form h2{
+        width: 100%;
+        margin: 15px auto 20px auto;
+        text-align: center;
+    }
+    div#form form input, div#form form textarea{
+        margin: 12px 0;
+        border: 3px solid #4d463f;
+        border-radius: 8px;
+        padding: 12px 0;
+    }
+    div#form form button{
+        margin: 10px 0;
+        border: 3px solid #4d463f;
+        border-radius: 8px;
+        padding: 4% 0;
+        background-color: #4d463f;
+        color: #fff;
+        font-size: 1.2em;
+    }
+    #gradient{
+        display: none;
+    }
+
+    /*////////////////////////////////////// our rooms  /////////////////////////////////////*/
+    header a,#navbarPg2 a{
+        display: none;
+    }
+    #anoy,#navbarPg2 i{
+        display: inline;
+        
+    }
+    #theMasterSuit img{
+        width: 80%;
+        margin: auto;
+        height: 500px;
+    }
+
+    #theMasterSuit div h2{
+        text-align: center;
+    }
+
+    #theMasterSuit div button{
+        margin-bottom: 20px;
+    }
+    /*//////////theJonuiorSuit/////////*/
+    #theJonuiorSuit img{
+        width: 100%;
+        height: 550px;
+    }
+    #theJonuiorSuit div div{
+        height: 0;
+        width: 0;
+    }
+    #theJonuiorSuit div{
+        width: 90%;
+        height: 550px;
+        margin-top: 500px;
+        margin-left: 5%;
+    }
+    #theJonuiorSuit div h2{
+        width: 80%;
+    }
+    #theJonuiorSuit div p{
+        width: 80%;
+        margin: 35px 0 35px 10%;
+    }
+    #theJonuiorSuit div button{
+        width: 60%;
+        margin-left: 20% ;
+    }
+
+    /*//////////standardRooms/////////*/
+    #standardRooms{
+        height: 50%;
+    }
+    #standardRooms h2{
+        width: 10em;
+        margin: 10% auto 4% auto;
+    }
+    #standardRooms div div{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        background-color: #fff;
+        height: 400px;
+    }
+    #standardRooms div div img{
+        max-width: 100%;
+        height: 55%;
+        margin-bottom: 5%;
+    }
+    #standardRooms button{
+        width: 60%;
+        height: 55px;
+        margin: 40px 0 3% 20%;
+        border: 3px solid #4d463f;
+        border-radius: 8px;
+        background-color: #fff;
+        font-size: 1.2em;
+    }
 }
